@@ -1,0 +1,207 @@
+/* General container styling */
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Flexbox for the feed content (Text + Image) */
+.feed-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Text section styling */
+.text-section {
+  flex: 1;
+  min-width: 0; /* Prevents text from overflowing on small screens */
+}
+
+.text-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.text-section p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Image styling */
+.image4 {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Styling for the silage section */
+.produce-silage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Silage text section */
+.silage {
+  flex: 1;
+  min-width: 0; /* Prevents text from overflowing */
+}
+
+.silage h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.silage p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Silage image */
+.Scow {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Cattle nutrition section */
+.cattle_nutrition {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.nutrition {
+  flex: 1;
+  min-width: 0; /* Prevents text from overflowing */
+}
+
+.nutrition h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.nutrition p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.cattle {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+/* Enhanced media queries for better responsive design */
+@media (max-width: 992px) {
+  .text-section h2,
+  .silage h2,
+  .nutrition h2 {
+    font-size: 20px;
+  }
+  
+  .image4,
+  .Scow,
+  .cattle {
+    width: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feed-content,
+  .produce-silage,
+  .cattle_nutrition {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .image4,
+  .Scow,
+  .cattle {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+    order: -1; /* Makes images appear before text on mobile */
+  }
+  
+  .feed-container {
+    padding: 15px;
+  }
+  
+  .feed-content,
+  .produce-silage,
+  .cattle_nutrition {
+    padding: 15px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feed-container {
+    padding: 10px;
+  }
+  
+  .feed-content,
+  .produce-silage,
+  .cattle_nutrition {
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .text-section h2,
+  .silage h2,
+  .nutrition h2 {
+    font-size: 18px;
+  }
+  
+  .text-section p,
+  .silage p,
+  .nutrition p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,378 @@
+/* Navbar.css - Enhanced with responsive design */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.header {
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+.top-navbar {
+  padding: 15px 0;
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Address Section */
+.address-info {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #666;
+}
+
+.location-icon {
+  color: #4682b4;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.address-text p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #666;
+}
+
+/* Logo Section */
+.logo-container {
+  text-align: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 45px;
+  width: auto;
+  max-width: 100%;
+}
+
+/* Actions Section */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.get-in-touch-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background-color: transparent;
+  border: 1px solid #4682b4;
+  border-radius: 4px;
+  color: #4682b4;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.get-in-touch-btn:hover {
+  background-color: #4682b4;
+  color: white;
+}
+
+.mail-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.cart-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #4682b4;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  background-color: white;
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0 50px;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nav-item.active a {
+  color: #4682b4;
+}
+
+.nav-item:hover a {
+  color: #4682b4;
+}
+
+.nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #4682b4;
+}
+
+/* Active tab highlight */
+.nav-item.active::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: #4682b4;
+}
+
+/* Mobile menu button */
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #4682b4;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .nav-links {
+      gap: 20px;
+      padding: 0 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+      padding: 0 10px;
+  }
+  
+  .bottom-nav {
+      padding: 10px 0;
+  }
+  
+  .nav-links {
+      gap: 15px;
+      padding: 0 15px;
+      justify-content: flex-start;
+  }
+  
+  .nav-item a {
+      font-size: 12px;
+  }
+  
+  .address-text p {
+      font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .actions {
+      width: 100%;
+      justify-content: center;
+  }
+  
+  .address-info {
+      width: 100%;
+      justify-content: center;
+  }
+  
+  .bottom-nav {
+      overflow-x: auto;
+      justify-content: flex-start;
+      padding: 10px 0;
+  }
+  
+  .nav-links {
+      flex-wrap: nowrap;
+      width: 100%;
+      overflow-x: auto;
+      padding: 0 15px 5px;
+      justify-content: flex-start;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+  }
+  
+  .nav-links::-webkit-scrollbar {
+      display: none;  /* Chrome, Safari, Opera */
+  }
+  
+  .nav-item.active::after {
+      bottom: -10px;
+  }
+  
+  .nav-item.active::before {
+      display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-toggle {
+      display: block;
+  }
+  
+  .top-navbar {
+      padding: 10px 0;
+  }
+  
+  .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+  
+  .logo-container {
+      order: 1;
+      flex: 0 0 auto;
+  }
+  
+  .address-info {
+      order: 3;
+      width: 100%;
+      justify-content: center;
+      margin-top: 10px;
+  }
+  
+  .actions {
+      order: 2;
+      width: auto;
+      gap: 10px;
+  }
+  
+  .get-in-touch-btn {
+      font-size: 11px;
+      padding: 6px 10px;
+  }
+  
+  .search-btn {
+      width: 30px;
+      height: 30px;
+  }
+  
+  .nav-item a {
+      font-size: 11px;
+  }
+  
+  /* Optional: Collapsed menu for very small screens */
+  .nav-links.collapsed {
+      display: none;
+  }
+  
+  .nav-links.expanded {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+      z-index: 100;
+      padding: 10px 0;
+  }
+  
+  .nav-links.expanded .nav-item {
+      width: 100%;
+      padding: 10px 15px;
+  }
+  
+  .nav-links.expanded .nav-item.active::after,
+  .nav-links.expanded .nav-item.active::before {
+      display: none;
+  }
+  
+  .nav-links.expanded .nav-item.active {
+      background-color: rgba(70, 130, 180, 0.1);
+  }
+}
