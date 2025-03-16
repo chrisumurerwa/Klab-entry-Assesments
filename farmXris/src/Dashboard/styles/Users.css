@@ -84,22 +84,22 @@
 }
 
 .edit-btn {
-    background-color: #2b6cb0;
+    /* background-color: #2b6cb0; */
     color: white;
     margin-right: 10px;
 }
 
 .delete-btn {
-    background-color: #e53e3e;
+    /* background-color: #434040; */
     color: white;
 }
 
 .edit-btn:hover {
-    background-color: #2c5282;
+    background-color: #d1d1dc;
 }
 
 .delete-btn:hover {
-    background-color: #c53030;
+    background-color: #c5c4c6;
 }
 
 /* Responsive Adjustments */
