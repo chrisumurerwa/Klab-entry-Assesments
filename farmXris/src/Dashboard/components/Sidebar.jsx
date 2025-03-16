@@ -14,7 +14,7 @@ const Sidebar = () => {
     <div className="Sidebar-container">
       {/* Sidebar */}
       <aside className="sidebar">
-        <h2 className="logo">Milky Farm</h2>
+        <h2 className="logo">Milk Farm</h2>
         <ul>
           <li>
             <Link to="/Dashboard" className={currentPath === "/Dashboard" ? "active" : ""}>
@@ -22,7 +22,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/users" className={currentPath === "/users" ? "active" : ""}>
+            <Link to="/Users" className={currentPath === "/Users" ? "active" : ""}>
               <FaRegUser className="sidebar-icon" /> User
             </Link>
           </li>

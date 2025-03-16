@@ -8,18 +8,18 @@ function Main() {
       <div className="stats-cards">
         <div className="stats-card">
           <p className="card-label">Total Cows</p>
-          <h2 className="card-value">0</h2>
+          <h2 className="card-value">300</h2>
         </div>
         
         <div className="stats-card">
           <p className="card-label">Milk Production</p>
-          <h2 className="card-value">0 L</h2>
+          <h2 className="card-value">170 L</h2>
           <span className="time-period">Last 7 days</span>
         </div>
         
         <div className="stats-card">
           <p className="card-label">Total Births</p>
-          <h2 className="card-value">0</h2>
+          <h2 className="card-value">98</h2>
           <span className="time-period">Last 30 days</span>
         </div>
       </div>
