@@ -1,5 +1,3 @@
-
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #f9fafb;
@@ -10,18 +8,19 @@ body {
 .Nav-container {
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 4rem; /* Increased height for better visibility */
+  left: 250px; /* Adjusted for sidebar */
+  width: calc(100% - 250px);
+  height: 4rem;
   background-color: aliceblue;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Align right */
   padding: 0 20px;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Logout button styling */
 .logout-button {
   background-color: rgb(82, 78, 78);
   color: white;
@@ -32,9 +31,7 @@ body {
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-right: 4px; /* 4px margin to the right */
 }
 
 .logout-button:hover {
