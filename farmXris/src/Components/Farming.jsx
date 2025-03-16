@@ -38,22 +38,32 @@ const Farming = () => {
       <h2 className="sub-title">NEW PRODUCTS</h2>
       <div className="product-section">
         <div className="product-card">
-        <img src={Image4} alt='contact' className='image'/>
-        <p className="product-name">Milk</p>
+        <img src={Image4} alt='Assets' className='image'/>
+        <h1 className="product-name">Milk</h1>
+        <p>Enjoy fresh, nutrient-rich milk with calcium, vitamins,and protein </p> 
+          <p> supporting a healthy lifestyle in every glass.</p>
         
         
         </div>
         <div className="product-card">
-        <img src={Image5} alt='contact' className='image'/>
-        <p className="product-name">Cheese milk</p>
+        <img src={Image5} alt='Assets' className='image'/>
+        <h1 className="product-name">Cheese milk</h1>
+        <p>Perfect for cheese lovers and artisans, this high-fat milk creates rich</p>
+          <p>creamy cheeses with exceptional flavor and texture.</p>
         </div>
         <div className="product-card">
-        <img src={Image6} alt='contact' className='image'/>
-        <p className="product-name">Special cheese</p>
+        <img src={Image6} alt='Assets' className='image1'/>
+        <h1 className="product-name">Special cheese</h1>
+        <p>Uniquely crafted cheeses that bring gourmet flavors—perfect for dishes</p>
+          <p> charcuterie boards, or a tasty snack.</p>
+
         </div>
         <div className="product-card">
-        <img src={Image7} alt='contact' className='image'/>
-        <p className="product-name">Meadow Milk</p>
+        <img src={Image7} alt='Assets' className='image1'/>
+        <h1 className="product-name">Meadow Milk</h1>
+        <p>Sourced from cows grazing on lush meadows </p> 
+          <p>this milk is rich in omega-3s and antioxidants</p>
+          <p>offering a wholesome, natural taste.</p>
         </div>
       </div>
     </div>

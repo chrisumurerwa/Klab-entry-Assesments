@@ -112,7 +112,29 @@ body {
   align-items: center;
   justify-content: center;
 }
+.login-button {
+  width: 30%;
+  padding: 8px 16px;
+  font-size:15px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #4A90E2, #1C3FAA);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
 
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, #1C3FAA, #4A90E2);
+  transform: scale(1.05);
+}
+
+.login-button:focus {
+  outline: none;
+
+}
 .search-btn {
   background: transparent;
   border: none;

@@ -6,7 +6,7 @@ function Home() {
     <div className="home">
        <div className="content">
    <h1>We are here for you</h1>
-   <p> Resources and support  food for animals ,</p>
+   <p> Resources and support  food for animals </p>
    <p>Free delivery of fresh milk and cheese  from local farm</p>
     <p> Natural resources  rural development nutrition,  and related issues  </p>
     

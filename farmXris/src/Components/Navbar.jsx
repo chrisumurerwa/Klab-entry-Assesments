@@ -38,6 +38,9 @@ const Navbar = () => {
               <FaShoppingCart />
               <span className="cart-count">2</span>
             </button>
+            <button class="login-button"><a href='/Login' style={{textDecoration: "none", color:'inherit'}}>Login</a></button>
+          
+
           </div>
         </div>
       </div>
@@ -46,8 +49,8 @@ const Navbar = () => {
       <div className="bottom-nav">
       <ul className="nav-links">
         <li className="nav-item active"><Link to="/">HOME</Link></li>
-        <li className="nav-item"><a href="/Feed">Feed production</a></li>
         <li className="nav-item"><a href="/Farming ">Farming & Training</a></li>
+        <li className="nav-item"><a href="/Feed">Feed production</a></li>
         <li className="nav-item"><a href="/Mentorship ">Mentorship program</a></li>
         <li className="nav-item"><a href="/Veterinary ">Veterinary service</a></li>
         <li className="nav-item"><a href="/Market linkages">Market linkages</a></li>

@@ -106,7 +106,9 @@
     margin-top: 10px;
     color: #333;
   }
-  
+  .product-card p{
+    font-size: 12px;
+  }
   /* Badge */
   .badge {
     position: absolute;
@@ -143,6 +145,10 @@
     .product-card img {
       width: 150px;
     }
+  }
+  .image1{
+    margin-top: 2rem;
+  height:18rem;
   }
   
   /* Mobile Phones (480px and below) */
