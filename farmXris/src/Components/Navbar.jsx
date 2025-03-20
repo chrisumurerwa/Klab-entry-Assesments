@@ -53,7 +53,7 @@ const Navbar = () => {
         <li className="nav-item"><a href="/Feed">Feed production</a></li>
         <li className="nav-item"><a href="/Mentorship ">Mentorship program</a></li>
         <li className="nav-item"><a href="/Veterinary ">Veterinary service</a></li>
-        <li className="nav-item"><a href="/Market linkages">Market linkages</a></li>
+        <li className="nav-item"><a href="/Marketlinkages">Market linkages</a></li>
         <li className="nav-item"><a href="/CONTACT">CONTACT US</a></li>
       </ul>
     </div>

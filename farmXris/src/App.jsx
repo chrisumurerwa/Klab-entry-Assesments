@@ -9,6 +9,7 @@ import Farming from "./Components/Farming";
 import Contact from "./Components/Contact";
 import Mentorship from "./Components/Mentorship";
 import Veterinary from "./Components/Veterinary";
+import MarketLinkagesPage from "./Components/MarketLinkages";
 import Main from "./Dashboard/components/Main";
 import DashboardLayout from "./Dashboard/components/DashboardLayout";
 
@@ -31,6 +32,7 @@ function App() {
               <Route path="/Mentorship" element={<Mentorship/>}/>
               <Route path="/Contact" element={<Contact />} />
               <Route path="/Veterinary" element={<Veterinary/>}/>
+              <Route path="/MarketLinkages" element={<MarketLinkagesPage/>}/>
             </Route>
 
             <Route path="/Login" element={<Login/>} />

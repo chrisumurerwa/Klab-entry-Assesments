@@ -69,7 +69,9 @@ const Mentorship = () => {
           <h3 className="mentor-name">Walter White</h3>
           <p className="mentor-title">Sustainable Farming Specialist</p>
           <p className="mentor-description">
-            Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat
+          <p>A Sustainable Farming Specialist on a milk farm focuses </p>
+          <p>on improving dairy farming practices while protecting the environment.</p>
+            <p> They work on sustainable milk production by promoting organic feed,</p>
           </p>
         </div>
 
