@@ -65,11 +65,11 @@ function Veterinary() {
             <div className="contact-info">
               <div className="contact-item">
                 <span className="contact-label">Emergency Line:</span>
-                <span className="contact-value">(555) 123-4567</span>
+                <span className="contact-value">(+250) 785098785</span>
               </div>
               <div className="contact-item">
                 <span className="contact-label">Email:</span>
-                <span className="contact-value">vetcare@farmservice.com</span>
+                <span className="contact-value">vetcare@milk-farmservice.com</span>
               </div>
               <div className="contact-item">
                 <span className="contact-label">Hours:</span>
