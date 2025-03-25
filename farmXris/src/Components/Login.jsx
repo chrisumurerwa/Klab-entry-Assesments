@@ -12,7 +12,7 @@ const Login = () => {
 
   const onLoginSubmit = async (data) => {
     try {
-      const res = await axios.post("http://localhost:5000/user/login", data, {
+      const res = await axios.post("http://localhost:5001/user/login", data, {
         headers: { "Content-Type": "application/json" },
       });
       console.log(res.data);
@@ -24,7 +24,7 @@ const Login = () => {
 
   const onRegisterSubmit = async (data) => {
     try {
-      const res = await axios.post("http://localhost:5000/user/register", data, {
+      const res = await axios.post("http://localhost:5001/user/register", data, {
         headers: { "Content-Type": "application/json" },
       });
       console.log(res.data);

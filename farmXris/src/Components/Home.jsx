@@ -46,7 +46,7 @@ function Home() {
 
         <div className="assistance-card">
           <div className="card-header">
-            <span className="card-label">LOANS, GRANTS AND FUNDING</span>
+            <span className="card-label">MILK-ASSISTANCE</span>
           </div>
           <div className="card-content">
             <div className="card-image grants-image">

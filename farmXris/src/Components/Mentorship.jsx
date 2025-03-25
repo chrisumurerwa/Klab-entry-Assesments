@@ -82,7 +82,8 @@ const Mentorship = () => {
           <h3 className="mentor-name">Sarah Jhinson</h3>
           <p className="mentor-title">Expert in Dairy Business Management</p>
           <p className="mentor-description">
-            Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum
+          <p> dairy business depends on proper management, strategic investment,</p>
+          <p>and continuous improvement in milk production and quality standards.</p> 
           </p>
         </div>
 
@@ -93,7 +94,9 @@ const Mentorship = () => {
           <h3 className="mentor-name">William Anderson</h3>
           <p className="mentor-title">Marketing</p>
           <p className="mentor-description">
-            Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum
+          <p>marketing is crucial for the success of a milk farm project. </p>
+          <p>It involves identifying target customers  </p>
+         <p>promoting milk products, and ensuring efficient distribution</p>
           </p>
         </div>
     </div>
