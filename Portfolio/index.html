@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Umurerwa Christine - Personal Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Umurerwa Christine</h1>
+    <p>Software Developer</p>
+  </header>
+
+  <main>
+    <section class="bio-section">
+      <div class="bio-container">
+        <!-- Use a valid relative image path -->
+        <img src="C:\Users\user\Pictures/Ceo.jpg" alt="Umurerwa Christine" class="profile-image" />
+        <p class="bio">
+          Hello! I am Umurerwa Christine, a passionate individual who loves building functional websites. Welcome to my personal profile page.
+        </p>
+        
+      </div>
+    </section>
+
+    <section class="hobbies">
+        <h2>My Hobbies</h2>
+        <div class="hobby-grid">
+          <div class="hobby-card"> Reading Books</div>
+          <div class="hobby-card"> Traveling</div>
+          <div class="hobby-card"> Photography</div>
+          <div class="hobby-card"> Cooking</div>
+        </div>
+      </section>
+    
+    <button class="btn-contact" onclick="displayGreeting()">Say hello</button>
+    <section class="contact-form">
+      <h2>Contact Me</h2>
+      <form onsubmit="return validateForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <button type="submit">submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p><i class="fas fa-envelope"></i> chrisumurerwa1@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +25 0785098785</p>
+            <p><i class="fas fa-location-dot"></i> Kigali Rwanda, Nyarugenge</p>
+        </div>
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <div class="social-links">
+                <a href="https://github.com/chrisumurerwa/" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/umurerwa-christine-238125288/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/CUmurerwa96619?t=ZEvYY2-BGaJ1eunRjrITMw&s=09" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#"> Portfolio</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Christine Umurerwa All rights are served.</p>
+    </div>
+</footer>
+<script>
+    // Toggle Menu for Mobile
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerMenu.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+  <script>
+    function displayGreeting() {
+      alert("Hello, Umurerwa!");
+    }
+
+    function validateForm(event) {
+      event.preventDefault(); // Prevent page from reloading
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+
+      if (!name || !email) {
+        alert("Please fill out both name and email.");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
+</body>
+</html>
